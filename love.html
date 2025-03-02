@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Love Letter to You</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 800px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .heart {
+            position: absolute;
+            opacity: 0.1;
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        .heart:nth-child(1) {
+            top: 10%;
+            left: 10%;
+            font-size: 40px;
+            animation-delay: 0s;
+        }
+        
+        .heart:nth-child(2) {
+            top: 20%;
+            right: 15%;
+            font-size: 30px;
+            animation-delay: 1s;
+        }
+        
+        .heart:nth-child(3) {
+            bottom: 15%;
+            left: 20%;
+            font-size: 50px;
+            animation-delay: 2s;
+        }
+        
+        .heart:nth-child(4) {
+            bottom: 10%;
+            right: 10%;
+            font-size: 35px;
+            animation-delay: 3s;
+        }
+        
+        .letter {
+            padding: 50px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        h1 {
+            font-size: 28px;
+            color: #e75480;
+            margin-bottom: 30px;
+            text-align: center;
+            font-family: 'Brush Script MT', cursive;
+        }
+        
+        p {
+            line-height: 1.8;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+        
+        .signature {
+            text-align: right;
+            font-style: italic;
+            margin-top: 40px;
+            font-family: 'Brush Script MT', cursive;
+            font-size: 24px;
+        }
+        
+        .envelope {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: #f8f9fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 10;
+            transition: transform 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+        
+        .envelope.open {
+            transform: translateY(-100%);
+        }
+        
+        .envelope-content {
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .open-button {
+            background: #e75480;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            border-radius: 30px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: all 0.3s;
+        }
+        
+        .open-button:hover {
+            background: #d44d79;
+            transform: scale(1.05);
+        }
+        
+        .heart-beat {
+            animation: heartbeat 1.5s infinite;
+            display: inline-block;
+            font-size: 26px;
+            margin: 0 5px;
+        }
+        
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            25% { transform: scale(1.1); }
+            50% { transform: scale(1); }
+            75% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="heart">❤️</div>
+        <div class="heart">❤️</div>
+        <div class="heart">❤️</div>
+        <div class="heart">❤️</div>
+        
+        <div class="envelope" id="envelope">
+            <div class="envelope-content">
+                <h1>A Letter From My Heart to Yours</h1>
+                <p>Click to open this letter written especially for you...</p>
+                <span class="heart-beat">❤️</span>
+                <button class="open-button" id="openButton">Open My Heart</button>
+            </div>
+        </div>
+        
+        <div class="letter">
+            <h1>To The One Who Holds My Heart</h1>
+            
+            <p>My dearest love,</p>
+            
+            <p>Do you remember that moment when our first talk? In that ordinary place, on that ordinary day, something extraordinary happened. The universe shifted, time slowed, and somehow I knew that my life would never be the same again. That feeling hasn't faded – it's only grown stronger with each passing day.</p>
+            
+            <p>In the tapestry of my life, you are the golden thread that brings light to every pattern. Before you, I never knew that love could feel like coming home. You've taught me that real love isn't just about grand gestures or perfect moments – it's in the quiet understanding when words fail, the gentle touch when days grow heavy, and the shared laughter that echoes in my heart long after the sound fades.</p>
+            
+            <p>When I look at you, I see not just who you are but who I become when I'm with you – braver, kinder, more complete. You've shown me parts of myself I never knew existed and accepted parts I was afraid to reveal. In your eyes, I've found a reflection of who I want to be.</p>
+            
+            <p>Your strength amazes me. Your kindness humbles me. Your passion inspires me. Even your imperfections are perfect to me, because they're woven into the person I love so completely. I cherish your quirks, your dreams, the way your voice sounds when you're excited, and how your hand fits perfectly in mine as if it was designed to be there.</p>
+            
+            <p>I promise to stand beside you through whatever life brings our way. When storms come, we'll face them together. When joy arrives, we'll celebrate as one. I vow to listen not just with my ears but with my heart, to remember that love is both a feeling and a choice I make every morning when I wake.</p>
+            
+            <p>Thank you for showing me what love truly means – not just passion that burns bright but comfort that endures, not just butterflies but deep-rooted peace, not just being seen but being known completely and loved anyway.</p>
+            
+            <p>You are my favorite hello and my hardest goodbye. You are my partner, my confidant, my best friend, my greatest adventure. You are, quite simply, the love of my life.</p>
+            
+            <p>Forever yours,</p>
+            
+            <div class="signature">With all my heart</div>
+        </div>
+    </div>
+    
+    <script>
+        document.getElementById('openButton').addEventListener('click', function() {
+            document.getElementById('envelope').classList.add('open');
+        });
+    </script>
+</body>
+</html>
